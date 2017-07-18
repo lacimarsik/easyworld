@@ -38,6 +38,16 @@ public class EasyWorldController {
 			"Open Source log management solution",
 			"https://syslog-ng.org/"
 		));
+		appAdminList.add(new Package(
+			"python-ly",
+			"(1-time fix) Required to run frescobaldi",
+			""
+		));
+		appAdminList.add(new Package(
+			"python-poppler-qt4",
+			"(1-time fix) Required to run frescobaldi",
+			""
+		));
 		system.list.add(new PackageGroup("app-admin", appAdminList));
 
 		for (PackageGroup group : system.list) {
