@@ -48,6 +48,11 @@ public class EasyWorldController {
 			"(1-time fix) Required to run frescobaldi",
 			""
 		));
+		appAdminList.add(new Package(
+			"=db-4.8.30-r2",
+			"(1-time fix) Required to run apache-2.4.27:2",
+			""
+		));
 		system.list.add(new PackageGroup("app-admin", appAdminList));
 
 		for (PackageGroup group : system.list) {
